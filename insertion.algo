@@ -1,0 +1,19 @@
+
+FUNCTION insertion sort (tab, i, j) : INTEGER
+VAR
+    tab: ARRAY_OF INTEGER[length];
+    key, i, j  : INTEGER
+    
+BEGIN
+    i = 1
+    FOR i FROM 0 TO  tab.length -1; i++
+        key = tab[i]; 
+        j = i - 1; 
+        WHILE (j>=O; tab[j]>0) DO
+            tab[j + 1] = tab[j]; 
+            j = j - 1; 
+        END_WHILE 
+        tab[j + 1] = key; 
+    END_FOR
+    RETURN tab ;
+END
